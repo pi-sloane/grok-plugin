@@ -1,0 +1,44 @@
+{
+  "name": "pi-security",
+  "description": "Install the official Pi Security plugin for Grok to investigate findings, review security posture, get remediation guidance, and run security reviews.",
+  "owner": {
+    "name": "Pi Security",
+    "email": "contact@pi.security"
+  },
+  "plugins": [
+    {
+      "name": "pi-security",
+      "description": "Use Pi Security in Grok to investigate findings, review security posture, get remediation guidance, start design reviews, import Markdown reports, and find secure development guidance.",
+      "category": "security",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/pi-sloane/claude-plugin.git",
+        "sha": "ec54cb39d08c85aa72d0161d321b28372394a405"
+      },
+      "version": "0.1.0",
+      "author": {
+        "name": "Pi Security",
+        "email": "contact@pi.security"
+      },
+      "homepage": "https://www.pi.security/",
+      "keywords": [
+        "security",
+        "appsec",
+        "findings",
+        "remediation",
+        "threat-model",
+        "design-review",
+        "mcp"
+      ],
+      "domains": [
+        "pi.security",
+        "mcp.pi.security"
+      ],
+      "tags": [
+        "security",
+        "appsec",
+        "mcp"
+      ]
+    }
+  ]
+}
