@@ -2,6 +2,8 @@
 
 Use Pi Security in Grok to investigate findings, review your security posture, and get remediation guidance as you work.
 
+![Pi Security logo](assets/pi-favicon-light.svg)
+
 This marketplace installs the official Pi Security plugin for Grok. The plugin connects to Pi Security through OAuth and does not install a local Pi service or include any credentials.
 
 ## What you can do
