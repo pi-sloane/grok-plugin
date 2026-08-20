@@ -2,9 +2,9 @@
 
 Use Pi Security in Grok to investigate findings, review your security posture, and get remediation guidance as you work.
 
-![Pi Security logo](assets/pi-favicon-light.svg)
+![Pi Security logo](plugins/pi-security/assets/pi-favicon-light.svg)
 
-This marketplace installs the official Pi Security plugin for Grok. The plugin connects to Pi Security through OAuth and does not install a local Pi service or include any credentials.
+The official Pi Security plugin connects Grok to your Pi Security workspace through browser-based sign-in. It does not install a local Pi service or include any credentials.
 
 ## What you can do
 
@@ -26,15 +26,23 @@ grok plugin marketplace add pi-sloane/grok-plugin
 grok plugin install pi-security --trust
 ```
 
-The first command adds the Pi Security marketplace. The second installs the plugin and allows Grok to connect to Pi Security.
+The first command adds the Pi Security marketplace. The second installs the plugin; `--trust` skips Grok's installation trust prompt. Browser sign-in connects Grok to Pi Security.
 
 Next, follow the sign-in and verification steps in [SETUP.md](SETUP.md).
 
-## Safety and updates
+## Safety
 
-Grok asks for your confirmation before using a Pi Security tool that changes data.
+Before accessing Pi Security data, the plugin shows which account and tenant are connected. It asks for confirmation before actions that upload content, start work in Pi, or record feedback.
 
-Each marketplace release points to a specific version of the public [`pi-sloane/claude-plugin`](https://github.com/pi-sloane/claude-plugin) repository. This keeps installations consistent and ensures that updates happen only when a new marketplace version is published.
+## Update the plugin
+
+Run:
+
+```shell
+grok plugin update pi-security
+```
+
+Use `grok plugin details pi-security` to check the installed version and components. See xAI's [Grok Build CLI reference](https://docs.x.ai/build/cli/reference) for plugin management commands.
 
 ## Privacy and support
 
@@ -46,4 +54,4 @@ Only share content that you are authorized to send to Pi Security, and never inc
 - [Report a security issue](SECURITY.md)
 - Support: [contact@pi.security](mailto:contact@pi.security)
 
-This marketplace is available under the [MIT License](LICENSE).
+This plugin and marketplace are available under the [MIT License](LICENSE).

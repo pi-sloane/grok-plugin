@@ -1,13 +1,23 @@
 # Set up Pi Security for Grok
 
-The Pi Security plugin uses OAuth to connect Grok to Pi Security. You will sign in through Pi Security in your browser; the marketplace does not include or store your credentials.
+The Pi Security plugin uses browser-based sign-in to connect Grok to Pi Security. The plugin does not include any credentials.
 
 ## Before you begin
 
-You need:
+Install Grok Build by following xAI's [official installation instructions](https://docs.x.ai/build/overview#install). If Grok is already installed, update it with:
 
-- A current version of Grok Build with plugin support.
-- A Pi Security account with access to at least one tenant.
+```shell
+grok update
+```
+
+This plugin does not require a specific Grok version. Confirm that your installation includes plugin management:
+
+```shell
+grok version
+grok plugin --help
+```
+
+You also need a Pi Security account with access to at least one tenant.
 
 ## 1. Install the plugin
 
@@ -18,7 +28,7 @@ grok plugin marketplace add pi-sloane/grok-plugin
 grok plugin install pi-security --trust
 ```
 
-Trusting the plugin allows Grok to connect to Pi Security's hosted service.
+The `--trust` option skips Grok's installation trust prompt. Browser sign-in in the next step connects Grok to Pi Security.
 
 ## 2. Sign in
 
@@ -35,6 +45,37 @@ Ask Grok:
 The plugin will show details about the connection, including the tenant and permissions, without exposing your credentials. If you have access to multiple tenants, confirm that the correct one is selected before continuing.
 
 Your tenant is selected when you sign in. Changing repositories or working directories does not change that selection.
+
+## Troubleshooting
+
+### Grok or plugin commands are unavailable
+
+Follow xAI's [installation instructions](https://docs.x.ai/build/overview#install), or run `grok update` for an existing installation. Then confirm that `grok plugin --help` succeeds.
+
+### The marketplace or plugin does not appear
+
+Check the configured marketplaces and installed plugins:
+
+```shell
+grok plugin marketplace list
+grok plugin list
+```
+
+If the Pi Security marketplace is missing, run the marketplace-add command from step 1 again. If the plugin is installed but needs an update, run:
+
+```shell
+grok plugin update pi-security
+```
+
+### Pi Security does not connect
+
+Run Grok's MCP diagnostic command:
+
+```shell
+grok mcp doctor pi-security
+```
+
+Then open `/mcps`, select `pi-security`, and press `i` to sign in again. See xAI's [MCP server troubleshooting guide](https://docs.x.ai/build/features/mcp-servers#troubleshooting) for more detail.
 
 ## Reconnect or disconnect
 

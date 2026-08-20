@@ -2,8 +2,7 @@
   "version": 1,
   "plugins": {
     "pi-security": {
-      "sha": "ec54cb39d08c85aa72d0161d321b28372394a405",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "components": {
         "mcpServers": [
           {
@@ -14,27 +13,27 @@
         "skills": [
           {
             "name": "ingest-markdown-report",
-            "description": "Submit a security report to Pi as inline Markdown with a .md or .markdown filename, after explicit user confirmation. R…"
+            "description": "Submit one security report to Pi from inline Markdown and a .md or .markdown filename after tenant verification and fre…"
           },
           {
             "name": "investigate-finding",
-            "description": "Investigate Pi Security findings - list, locate, explain, summarize, or compare findings by FND-XXX ID, UUID, or Pi fin…"
+            "description": "Investigate Pi Security findings by listing, locating, explaining, summarizing, or comparing exact FND-XXX IDs, UUIDs,…"
           },
           {
             "name": "remediation-guidance",
-            "description": "Fetch existing Pi remediation guidance for a finding or an SBOM package, and optionally prepare a missing package remed…"
+            "description": "Fetch existing Pi remediation guidance for a finding or vulnerable package, and optionally prepare one missing package…"
           },
           {
             "name": "review-security-posture",
-            "description": "Review Pi Security posture - threat-model application and section context combined with Code Gatekeeper PR and issue re…"
+            "description": "Review Pi Security posture by combining threat-model application context with Code Gatekeeper pull-request and issue re…"
           },
           {
             "name": "secure-development-playbook",
-            "description": "Get repo-specific Pi secure-development guidance for a concrete engineering task, optionally query tenant knowledge for…"
+            "description": "Retrieve Pi secure-development guidance for a concrete engineering task, optionally query focused tenant knowledge, and…"
           },
           {
             "name": "security-design-review",
-            "description": "Start a Pi Security design review from a supported Confluence or Notion document URL or from inline Markdown, after exp…"
+            "description": "Start one Pi Security design review from a supported Confluence or Notion URL or inline Markdown after tenant verificat…"
           }
         ]
       }

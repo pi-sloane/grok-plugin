@@ -11,31 +11,29 @@
       "description": "Use Pi Security in Grok to investigate findings, review security posture, get remediation guidance, start design reviews, import Markdown reports, and find secure development guidance.",
       "category": "security",
       "source": {
-        "source": "url",
-        "url": "https://github.com/pi-sloane/claude-plugin.git",
-        "sha": "ec54cb39d08c85aa72d0161d321b28372394a405"
+        "type": "local",
+        "path": "./plugins/pi-security"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
         "name": "Pi Security",
         "email": "contact@pi.security"
       },
       "homepage": "https://www.pi.security/",
       "keywords": [
-        "security",
-        "appsec",
-        "findings",
-        "remediation",
-        "threat-model",
-        "design-review",
-        "mcp"
+        "pi security",
+        "pi security appsec",
+        "pi security findings",
+        "pi security remediation",
+        "pi security threat modeling",
+        "pi security design review"
       ],
       "domains": [
         "pi.security",
         "mcp.pi.security"
       ],
       "tags": [
-        "security",
+        "pi-security",
         "appsec",
         "mcp"
       ]

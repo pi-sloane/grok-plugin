@@ -1,0 +1,23 @@
+{
+  "name": "pi-security",
+  "displayName": "Pi Security",
+  "version": "0.2.0",
+  "description": "Use Pi Security in Grok Build to investigate findings, review security posture, get remediation guidance, start design reviews, import Markdown reports, and apply secure-development guidance.",
+  "author": {
+    "name": "Pi Security",
+    "email": "contact@pi.security",
+    "url": "https://www.pi.security/"
+  },
+  "homepage": "https://www.pi.security/",
+  "repository": "https://github.com/pi-sloane/grok-plugin",
+  "license": "MIT",
+  "keywords": [
+    "pi security",
+    "pi security appsec",
+    "pi security findings",
+    "pi security remediation",
+    "pi security threat modeling",
+    "pi security design review"
+  ],
+  "logo": "assets/pi-favicon-light.svg"
+}
