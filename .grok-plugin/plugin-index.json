@@ -2,7 +2,7 @@
   "version": 1,
   "plugins": {
     "pi-security": {
-      "version": "0.2.0",
+      "version": "0.2.1",
       "components": {
         "mcpServers": [
           {
@@ -29,7 +29,7 @@
           },
           {
             "name": "secure-development-playbook",
-            "description": "Retrieve Pi secure-development guidance for a concrete engineering task, optionally query focused tenant knowledge, and…"
+            "description": "Retrieve Pi secure-development guidance once for a stable engineering task, reconcile it with current repository eviden…"
           },
           {
             "name": "security-design-review",
