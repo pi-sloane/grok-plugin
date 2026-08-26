@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+
+- Made Pi's secure-development playbook the only Pi guidance lookup for development tasks and limited it to one query per stable task.
+- When coverage is adjacent or missing, Grok now reports the gap and continues from current repository evidence instead of retrying or querying the knowledge base.
+
 ## 0.2.0
 
 - Updated the plugin to install and update directly through the Pi Security marketplace.
