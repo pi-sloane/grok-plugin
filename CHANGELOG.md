@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+- `security-design-review` now reads a review's gaps and records a verdict on each (accept fix, accepted risk, false positive, or reopen), after tenant verification and explicit confirmation.
+
 ## 0.2.1
 
 - Made Pi's secure-development playbook the only Pi guidance lookup for development tasks and limited it to one query per stable task.

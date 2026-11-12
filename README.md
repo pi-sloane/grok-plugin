@@ -13,7 +13,7 @@ With the plugin, you can ask Grok to:
 - Investigate, explain, summarize, and compare Pi Security findings.
 - Review threat models and Code Gatekeeper results.
 - Get remediation guidance for findings and vulnerable packages.
-- Start a security design review.
+- Start a security design review and record a verdict on each of its gaps.
 - Import security reports written in Markdown.
 - Find secure development guidance for the repository you're working in.
 
@@ -32,7 +32,7 @@ Next, follow the sign-in and verification steps in [SETUP.md](SETUP.md).
 
 ## Safety
 
-Before accessing Pi Security data, the plugin shows which account and tenant are connected. It asks for confirmation before actions that upload content, start work in Pi, or record feedback.
+Before accessing Pi Security data, the plugin shows which account and tenant are connected. It asks for confirmation before actions that upload content, start work in Pi, or record feedback or design-review verdicts.
 
 ## Update the plugin
 

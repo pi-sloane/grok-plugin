@@ -2,7 +2,7 @@
   "version": 1,
   "plugins": {
     "pi-security": {
-      "version": "0.2.1",
+      "version": "0.2.2",
       "components": {
         "mcpServers": [
           {
@@ -33,7 +33,7 @@
           },
           {
             "name": "security-design-review",
-            "description": "Start one Pi Security design review from a supported Confluence or Notion URL or inline Markdown after tenant verificat…"
+            "description": "Start one Pi Security design review from a supported Confluence or Notion URL or inline Markdown, read its gaps, and re…"
           }
         ]
       }

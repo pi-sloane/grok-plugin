@@ -8,13 +8,13 @@
   "plugins": [
     {
       "name": "pi-security",
-      "description": "Use Pi Security in Grok to investigate findings, review security posture, get remediation guidance, start design reviews, import Markdown reports, and find secure development guidance.",
+      "description": "Use Pi Security in Grok to investigate findings, review security posture, get remediation guidance, start and decide design reviews, import Markdown reports, and find secure development guidance.",
       "category": "security",
       "source": {
         "type": "local",
         "path": "./plugins/pi-security"
       },
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": {
         "name": "Pi Security",
         "email": "contact@pi.security"

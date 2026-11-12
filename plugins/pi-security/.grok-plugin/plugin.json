@@ -1,8 +1,8 @@
 {
   "name": "pi-security",
   "displayName": "Pi Security",
-  "version": "0.2.1",
-  "description": "Use Pi Security in Grok Build to investigate findings, review security posture, get remediation guidance, start design reviews, import Markdown reports, and apply secure-development guidance.",
+  "version": "0.2.2",
+  "description": "Use Pi Security in Grok Build to investigate findings, review security posture, get remediation guidance, start and decide design reviews, import Markdown reports, and apply secure-development guidance.",
   "author": {
     "name": "Pi Security",
     "email": "contact@pi.security",
